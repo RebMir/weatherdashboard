@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;    
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Input and Button Styling */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #080f6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #080f6b;
+}
+
+/* Weather Info Section */
+.hidden {
+    display: none;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+}
+
+img {
+    width: 100px;
+}
+
+/* 🌟 Responsive Design for Small Devices (Phones) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* 📱 Responsive Design for Tablets */
+@media screen and (max-width: 900px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* 💻 Responsive Design for Large Screens (Desktops) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 500px;
+    }
+}
